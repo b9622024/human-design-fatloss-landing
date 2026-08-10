@@ -11,3 +11,14 @@
 .testimonial-list{display:grid;gap:24px}.story-card{display:grid;grid-template-columns:220px 1fr;background:var(--paper);border:1px solid var(--line);padding:38px 42px;align-items:start}.story-card header{display:flex;align-items:center;gap:15px}.story-initial{width:58px;height:58px;border-radius:50%;background:var(--ink);color:white;display:grid;place-items:center;font:700 23px "Noto Serif TC"}.story-card h3{margin:0;color:var(--ink);font:700 21px "Noto Serif TC"}.story-card header p{margin:2px 0 0;font-size:12px;color:var(--clay)}.story-card blockquote{margin:0;padding-left:34px;border-left:1px solid #cfc5b7;font-family:"Noto Serif TC";font-size:16px;line-height:2;color:#425a53}
 @media(max-width:900px){.report-hero{max-width:620px;width:100%;margin:auto}.actual-report-card{max-width:520px;width:100%;margin:auto}.actual-report-frame{height:650px}.story-card{grid-template-columns:180px 1fr}}
 @media(max-width:600px){.brand-logo{width:40px;height:40px}.report-hero{height:540px;padding:24px 12px 0}.report-window{height:520px;width:86%}.report-tag{transform:scale(.88)}.tag-one{left:3px;top:105px}.tag-two{right:2px;top:225px}.tag-three{left:6px;bottom:42px}.actual-report-frame{height:560px}.actual-report-card figcaption{left:10px;right:10px;bottom:10px}.coach-portrait{min-height:430px}.story-card{grid-template-columns:1fr;padding:28px 23px}.story-card blockquote{padding:22px 0 0;border-left:0;border-top:1px solid #cfc5b7;font-size:15px}.testimonials .section-heading br{display:none}}
+
+
+/* Unobstructed reports and full portrait */
+.report-hero{height:auto;min-height:610px;flex-direction:column;gap:18px;padding:28px 30px 24px}
+.report-window{height:510px;width:min(390px,88%);border-radius:16px}
+.report-key{position:relative;z-index:3;width:min(390px,88%);display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.report-key span{background:rgba(255,255,255,.94);border:1px solid var(--line);padding:9px 10px;box-shadow:0 8px 18px rgba(31,57,49,.07)}
+.report-key small,.report-key b{display:block}.report-key small{font-size:7px;letter-spacing:.12em;color:var(--clay)}.report-key b{font-size:11px;color:var(--ink)}
+.actual-report-card{position:static}.actual-report-card figcaption{position:static;background:var(--ink);padding:14px 16px}
+.coach-portrait{min-height:0;display:block}.coach-portrait>img{position:static;width:100%;height:auto;object-fit:contain;display:block}
+@media(max-width:600px){.report-hero{height:auto;min-height:0;padding:20px 12px}.report-window{height:455px;width:92%}.report-key{width:92%;gap:5px}.report-key span{padding:8px 7px}.report-key b{font-size:10px}.actual-report-card figcaption{position:static}.coach-portrait{min-height:0}.coach-caption{padding:28px 24px 20px}}
